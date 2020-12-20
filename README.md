@@ -11,7 +11,7 @@ API-URL: http://localhost:8090/api
 ## Installation
 Run 'start.sh' script from root directory
 
-##Requirements
+## Requirements
 - Docker (https://www.docker.com/)
 - Docker-compose (https://docs.docker.com/compose/install/)
 
