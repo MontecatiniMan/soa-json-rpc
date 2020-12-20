@@ -17,7 +17,7 @@ services:
     container_name: nginx_weather_history
     restart: always
     ports:
-      - '8090:8090'
+      - '8090:80'
     volumes:
       - ./weather_history/docker/nginx/:/etc/nginx/conf.d
       - ./weather_history/:/app/weather_history/
@@ -38,6 +38,8 @@ services:
       - '9000:9000'
     links:
       - db
+    extra_hosts:
+      - "dockerhost:$DOCKERHOST"
 
   db:
     image: mariadb

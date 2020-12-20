@@ -18,8 +18,6 @@ class WeatherHistory extends Model
 
     const TABLE_NAME = 'history';
 
-    protected $fillable = ['temp', 'date_at'];
-
     /**
      * {@inheritdoc}
      *
@@ -29,6 +27,4 @@ class WeatherHistory extends Model
     {
         return static::TABLE_NAME;
     }
-
-
 }

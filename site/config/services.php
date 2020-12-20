@@ -31,7 +31,7 @@ return [
     ],
 
     'data' => [
-        'base_uri' => 'http://192.168.4.38:8090/data',
+        'base_uri' => 'http://dockerhost:8090/data',
     ]
 
 ];
