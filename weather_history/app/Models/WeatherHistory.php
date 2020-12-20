@@ -18,7 +18,7 @@ class WeatherHistory extends Model
 
     const TABLE_NAME = 'history';
 
-    protected array $fillable = ['temp', 'date_at'];
+    protected $fillable = ['temp', 'date_at'];
 
     /**
      * {@inheritdoc}
