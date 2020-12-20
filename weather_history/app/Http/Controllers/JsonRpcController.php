@@ -7,7 +7,6 @@ namespace App\Http\Controllers;
 use App\Http\Response\JsonRpcResponse;
 use App\Models\WeatherHistory;
 use Carbon\Carbon;
-use Illuminate\Http\JsonResponse;
 use Illuminate\Support\Facades\Validator;
 
 /**

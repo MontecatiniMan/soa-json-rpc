@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace App\Services;
 
 use GuzzleHttp\Client;
+use GuzzleHttp\Exception\GuzzleException;
 use GuzzleHttp\RequestOptions;
 
 /**
@@ -27,6 +28,13 @@ class JsonRpcClient
         ]);
     }
 
+    /**
+     * @param string $method
+     * @param array  $params
+     *
+     * @return array
+     * @throws GuzzleException
+     */
     public function send(string $method, array $params): array
     {
         $response = $this->client
