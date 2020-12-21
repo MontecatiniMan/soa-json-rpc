@@ -6,7 +6,7 @@ URL: http://localhost
 ## Weather History Service
 Json RPC service. 
 
-API-URL: http://localhost:8090/api
+API-URL: http://localhost:8090/api/data
 
 ## Installation
 Run 'start.sh' script from root directory
